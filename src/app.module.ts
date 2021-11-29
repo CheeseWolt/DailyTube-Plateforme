@@ -4,9 +4,10 @@ import { AppService } from './app.service';
 import { VideoModule } from './video/video.module';
 import { UserModule } from './user/user.module';
 import { CommentModule } from './comment/comment.module';
+import { TypeOrmModule } from '@nestjs/typeorm';
 
 @Module({
-  imports: [VideoModule, UserModule, CommentModule],
+  imports: [TypeOrmModule.forRoot(), VideoModule, UserModule, CommentModule],
   controllers: [AppController],
   providers: [AppService],
 })
