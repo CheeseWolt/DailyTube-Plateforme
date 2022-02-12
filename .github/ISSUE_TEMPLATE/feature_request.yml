@@ -1,25 +1,13 @@
 name: "\U0001F680 Feature Request"
 description: "I have a suggestion \U0001F63B!"
 labels: ["type: enhancement :wolf:", "needs triage"]
+asignees: ["CheeseWolt"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        ## :warning: We use GitHub Issues to track bug reports, feature requests and regressions
- 
-        If you are not sure that your issue is a bug, you could:
-
-        - read the [FAQ's common errors](https://docs.nestjs.com/faq/common-errors) page
-        - use our [Discord community](https://discord.gg/NestJS)
-        - use [StackOverflow using the tag `nestjs`](https://stackoverflow.com/questions/tagged/nestjs)
-        - If it's just a quick question you can ping [our Twitter](https://twitter.com/nestframework)
-
-        ---
 
   - type: checkboxes
     attributes:
       label: "Is there an existing issue that is already proposing this?"
-      description: "Please search [here](../issues?q=is%3Aissue) to see if an issue already exists for the feature you are requesting"
+      description: "Please search [here](https://github.com/CheeseWolt/DailyTube-Plateforme/issues) to see if an issue already exists for the feature you are requesting"
       options:
       - label: "I have searched the existing issues"
         required: true
