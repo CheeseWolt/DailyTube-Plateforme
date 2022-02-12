@@ -16,11 +16,19 @@ export class UserService {
   }
 
   async findAll() {
-    return this.usersRepository.find();
+    const users = await this.usersRepository.find();
+    users.forEach((user) => {
+      delete user.password;
+      delete user.email;
+    });
+    return users;
   }
 
   async findOne(id: ObjectID) {
-    return this.usersRepository.findOne(id);
+    const user = await this.usersRepository.findOne(id);
+    delete user.password;
+    delete user.email;
+    return user;
   }
 
   update(id: number, updateUserDto: UpdateUserDto) {
