@@ -2,11 +2,12 @@ title: "perf: "
 name: "\U0001F525 Suggestion for Improving Performance"
 description: "I have a suggestion that might improve the performance of Nest \U00002728"
 labels: ["type: enhancement :wolf:", "needs triage"]
+assignees: ["CheeseWolt"]
 body:
   - type: checkboxes
     attributes:
       label: "Is there an existing issue that is already proposing this?"
-      description: "Please search [here](../issues?q=is%3Aissue) to see if an issue already exists for this"
+      description: "Please search [here](https://github.com/CheeseWolt/DailyTube-Plateforme/issues) to see if an issue already exists for this"
       options:
       - label: "I have searched the existing issues"
         required: true
@@ -15,7 +16,7 @@ body:
     validations:
       required: true
     attributes:
-      label: "NestJS version"
+      label: "Version"
       description: "Which version do you intend to improve?"
       placeholder: "8.1.3"
 
